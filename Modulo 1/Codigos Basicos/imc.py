@@ -1,9 +1,9 @@
 try:
-    nome = input("Digite o nome do paciente: ")
-    P = float(input("Digite o peso de uma pessoa em Kg: "))
-    A = float(input("Digite a altura de uma pessoa: "))
+    nome = input("Digite seu nome: ")
+    altura = float(input("Digite sua altura: "))
+    peso = float(input("Digite seu peso: "))
 
-    imc = P/(A*A)
+    imc = peso / (altura * altura)
 
     if imc < 18.5:
         print("Abaixo do peso")
@@ -15,9 +15,10 @@ try:
         print("Obesidade Grau I")
     elif imc < 39.9:
         print("Obesidade Grau II")
-    else: 
-        print("Obesidade Grau III")
+    else:
+        print("Obesidade Grau III (morbida)")
 
-    print(f"O Imc do paciente {nome} é : {imc}")
+
+    print(f"O nome do paciente é: {nome}\nE o IMC é: {imc}")
 except:
-    print("Valor incorreto, digite o que pede")
+    print("Valor digitado incorreto, Tente novamente")
