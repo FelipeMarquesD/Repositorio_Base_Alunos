@@ -1,0 +1,17 @@
+body{
+    background-color: aqua;
+}
+
+.textos h1{
+    font-size: 40px;
+    color: rgb(255, 0, 0);
+}
+
+.textos p{
+    font-size: 24px;
+    color: rgb(30, 0, 255);
+}
+
+img {
+    width: 50%
+}
